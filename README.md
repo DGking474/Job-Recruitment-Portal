@@ -13,7 +13,7 @@ companies to interact in the best way possible and reduce the human efforts.
 
 <h4><b>Contributors</b></h4>
 
-- [@fenil143](https://github.com/fenil143)
+- [@DGking474](https://github.com/DGking474)
 
 ### Few Screenshots
 ![Homepage](frontend/ScreenShots/1.PNG "Homepage")
