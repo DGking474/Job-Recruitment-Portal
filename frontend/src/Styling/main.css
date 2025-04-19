@@ -1,0 +1,455 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-bx {
+  @apply relative w-auto;
+}
+
+.input-field {
+  @apply w-full p-2.5 border border-black rounded-md outline-none text-lg transition-all;
+}
+
+.input-field:valid ~ .span-text,
+.input-field:focus ~ .span-text {
+  @apply text-blue-500 transform -translate-x-1.5 -translate-y-1.5 text-xs font-semibold bg-white px-2;
+}
+
+.input-field:valid,
+.input-field:focus {
+  @apply border-2 border-blue-500;
+}
+
+.span-text {
+  @apply absolute left-0 p-2 text-sm text-blue-500 uppercase pointer-events-none transition-all;
+}
+/* Ensure the placeholder text wraps within the defined width */
+input::placeholder {
+  white-space: pre-wrap; /* Allows placeholder text to wrap */
+}
+
+/* Optional: If you want to control the placeholder styling */
+input::placeholder {
+  color: #6c757d;
+  font-size: 0.875rem; /* Adjust the size as needed */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+  background-position-x: right;
+  background-color: #f0f0f0;
+
+
+    /* justify-content: center; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    height: 100%;
+
+}
+
+.button-container {
+  /* Adjust the height as needed */
+  background-color: white;
+
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.centered-div {
+  width: 600px;
+  /* Adjust the width as needed */
+  
+  /* Adjust the height as needed */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* Shadow effect */
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.centered-button {
+  /* Optional: Adjust button styles as needed */
+  padding: 10px 20px;
+  width: 140px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-family: "Poppins";
+  
+  border-radius: 5px;
+  cursor: pointer;
+}
+.centered-button1 {
+  /* Optional: Adjust button styles as needed */
+  padding: 10px 20px;
+  width: 140px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-family: "Poppins";
+  
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.centered-button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  color: white;
+  /* Text color remains white */
+
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  position: relative;
+ top:30;
+  margin-bottom: 10px;
+
+  justify-content: space-between;
+  /* Space between content and image */
+  align-items: center;
+  /* Vertically center items within the container */
+  padding: 20px;
+  /* Add spacing if needed */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  flex: 1;
+  
+  /* Allow content to take up available space */
+}
+
+.image-container {
+  flex: 0 0 auto;
+  /* Prevent image from growing or shrinking */
+  margin-left: 20px;
+}
+
+.im {
+  width: 300px;
+  /* Ensure the image fits within its container */
+}
+.im1 {
+  width: 460px;
+  /* Ensure the image fits within its container */
+}
+
+.heading {
+  color: #007bff;
+}
+.arrow {
+  margin-left: 5px;
+  
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.login-div {
+  border-radius: 20px;
+  margin-left: 40px;
+  position: relative;
+  justify-content: center;
+  list-style: none;
+  display: list-item;
+  width: 600px;
+  height: max-content;
+  align-items: center;
+}
+
+.parent_label {
+  font-family: Poppins;
+  
+  color: #007bff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.input-div {
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.input-div1 {
+  display: flex;
+  margin-top: 20px;
+  
+}
+.input-div4 {
+  margin-top: 20px;
+  
+}
+.input-div2 {
+  display: flex;
+  margin-top: 20px;
+
+}
+.input-div3 {
+  display: flex;
+  margin-top: 20px;
+  
+}
+
+.icon {
+  font-size: 24px;
+  margin-top: 8px;
+  color: #007bff;
+}
+
+
+
+.input-bx input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  transition: 0.6s;
+}
+
+.input-bx textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  transition: 0.6s;
+}
+
+.input-bx span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  font-size: 1rem;
+  color: #007bff;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: 0.6s;
+}
+
+.input-bx input:valid~span,
+.input-bx input:focus~span {
+  color: #007bff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0 10px;
+  background: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.input-bx input:valid,
+.input-bx input:focus {
+  color: #050404;
+  border: 2px solid #007bff;
+
+}
+
+.input-bx textarea:valid~span,
+.input-bx textarea:focus~span {
+  color: #007bff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0 10px;
+  background: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.input-bx textarea:valid,
+.input-bx textarea:focus {
+  color: #050404;
+  border: 2px solid #007bff;
+
+}
+
+.span-text {
+  font-family: Poppins;
+}
+.line{
+  margin-left: 10px; font-weight: lighter
+}
+.ilebel{
+  font-family: Poppins; margin-left: 10px;margin-top: 4px; font-size: large;
+  font-weight: bold;
+}
+.ilebel1{
+  font-family: Poppins; margin-left: 10px;margin-top: 4px; font-size: large;
+  font-weight: bold;
+}
+.btnstyle{
+  background-color: #D64B4B;margin-left: 30px;
+}
+.dline {
+  height: 50px;
+  background-color: #050404;
+  border: 0.5px solid black;
+  box-shadow: 5px 10px 18px #c9c5c5;
+  margin-left: 10px;
+}
+/* Sidebar container */
+.sidebar {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #007bff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Sidebar icons */
+.fa {
+  padding-right: 10px;
+}
+
+/* Sidebar menu items */
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Active (selected) menu item */
+.sidebar-menu li.active {
+  background-color: white;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.sidebar-menu li:hover {
+  background-color: #ffffff30;
+}
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fbc2eb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
+  }.resume-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .left-box, .right-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image-container {
+    width: 150px; /* Set a fixed width for the image container */
+    height: 150px; /* Set a fixed height for the image container */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide any overflow content */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .profile-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+  }
+  
+  .content-box h2, .right-box h2 {
+    margin-top: 0;
+  }
+  
+  .hr1, .hr2 {
+    margin: 10px 0;
+  }
+  
+  .skill-item, .experience-item, .education-item, .hobbies-item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .skill-item .skill-name, .education-item .p5 {
+    flex: 1;
+  }
+  
+  .skill-level i {
+    margin: 0 5px;
+  }
+  
+  .centered-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .resume-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .left-box, .right-box {
+      padding: 10px;
+    }
+  
+    .centered-button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
